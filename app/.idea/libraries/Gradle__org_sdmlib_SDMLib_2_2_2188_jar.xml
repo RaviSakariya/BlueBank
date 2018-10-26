@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.sdmlib:SDMLib:2.2.2188@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sdmlib/SDMLib/2.2.2188/b3fc2126512a01e06dbc28dacce1c7b961ac3bf5/SDMLib-2.2.2188.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sdmlib/SDMLib/2.2.2188/8dec1dc930e262d5393f7d5400b0c33304676920/SDMLib-2.2.2188-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

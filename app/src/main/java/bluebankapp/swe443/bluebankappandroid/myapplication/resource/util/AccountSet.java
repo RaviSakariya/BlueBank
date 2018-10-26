@@ -37,7 +37,7 @@ import bluebankapp.swe443.bluebankappandroid.myapplication.resource.Bank;
 
 public class AccountSet extends SimpleSet<Account> implements Parcelable {
 
-   protected Class<?> getTypClass() {
+   public Class<?> getTypClass() {
 		return Account.class;
 	}
 
@@ -75,7 +75,8 @@ public class AccountSet extends SimpleSet<Account> implements Parcelable {
    }
 
 
-   public AccountSet filter(Condition<Account> condition) {
+
+   public AccountSet filter1(Condition<Account> condition) {
       AccountSet filterList = new AccountSet();
       filterItems(filterList, condition);
       return filterList;

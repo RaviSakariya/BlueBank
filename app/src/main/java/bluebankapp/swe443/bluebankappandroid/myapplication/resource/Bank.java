@@ -27,7 +27,6 @@ import android.os.Parcelable;
 import de.uniks.networkparser.interfaces.SendableEntity;
 import java.beans.PropertyChangeSupport;
 import java.beans.PropertyChangeListener;
-import java.util.Arrays;
 
 import de.uniks.networkparser.EntityUtil;
 import bluebankapp.swe443.bluebankappandroid.myapplication.resource.util.AccountSet;

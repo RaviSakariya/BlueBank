@@ -51,7 +51,7 @@ public class UserSet extends SimpleSet<User> implements Parcelable {
       }
    };
 
-   protected Class<?> getTypClass() {
+   public Class<?> getTypClass() {
 		return User.class;
 	}
 
@@ -89,7 +89,7 @@ public class UserSet extends SimpleSet<User> implements Parcelable {
    }
 
 
-   public UserSet filter(Condition<User> condition) {
+   public UserSet filter1(Condition<User> condition) {
       UserSet filterList = new UserSet();
       filterItems(filterList, condition);
       return filterList;

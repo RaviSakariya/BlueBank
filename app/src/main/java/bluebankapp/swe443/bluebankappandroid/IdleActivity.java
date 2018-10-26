@@ -3,19 +3,20 @@
  */
 package bluebankapp.swe443.bluebankappandroid;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Handler;
-import android.support.v4.app.NotificationCompat;
 
 public class IdleActivity extends Activity {
     public static final long DISCONNECT_TIMEOUT = 900000; // 15 min = 15 * 60 * 1000 ms
 
+    @SuppressLint("HandlerLeak")
     private static Handler disconnectHandler = new Handler(){
-        public void handleMessage(NotificationCompat.MessagingStyle.Message msg) {
-            // TODO: provide idle message
-        }
+//        public void handleMessage(NotificationCompat.MessagingStyle.Message msg) {
+//            // TODO: provide idle message
+//        }
     };
 
     private Runnable disconnectCallback = new Runnable() {

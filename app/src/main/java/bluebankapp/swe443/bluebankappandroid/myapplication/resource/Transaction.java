@@ -31,6 +31,10 @@ import java.io.FileWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static bluebankapp.swe443.bluebankappandroid.myapplication.resource.Transaction.Type.deposit;
+import static bluebankapp.swe443.bluebankappandroid.myapplication.resource.Transaction.Type.transfer;
+import static bluebankapp.swe443.bluebankappandroid.myapplication.resource.Transaction.Type.withdraw;
+
 /**
  *
  * @see <a href='../../../../../src/main/java/Model.java'>Model.java</a>
@@ -58,7 +62,7 @@ public  class Transaction implements SendableEntity
         SimpleDateFormat formatDate = new SimpleDateFormat("MM-dd-yyyy HH:mm");
 
         StringBuilder log = new StringBuilder();
-        if(undo==false){
+        if(!undo){
             switch (type){
                 case deposit:
                     log.append("Deposited "+getAmount()+" /"+formatDate.format(currentDate));
@@ -138,7 +142,7 @@ public  class Transaction implements SendableEntity
         }
 
         //log transfer in receivers log
-        if(type.equals(Type.transfer)){
+        if(type.equals(transfer)){
             //log to the second account
             String log_2 = acct1.getName()+" transferred "+getAmount()+" /"+new SimpleDateFormat("MM-dd-yyyy HH:mm").format(new Date());
             File file2 = new File("src/logs/"+this.acct2.getUsername().toString()+"_log");

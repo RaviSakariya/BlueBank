@@ -25,3 +25,10 @@ Transfer%htruong%sjammi%0.0%500.0
 Withdraw%htruong%%1.0%20.0
 Transfer%htruong%ededej%0.0%350.0
 Dispute Transfer%htruong%ededej%0.0%350.0
+Create%amit%%0.0%1000.0
+Create%john%%0.0%1000.0
+Deposit%john%%0.0%100.0
+Transfer%john%amit%0.0%100.0
+Withdraw%john%%0.0%50.0
+Deposit%john%%0.0%300.0
+Transfer%john%amit%0.0%500.0

@@ -64,11 +64,12 @@ public class MainActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             mSpass = new Spass();
             try {
+                isFeatureEnabled = mSpass.isFeatureEnabled(Spass.DEVICE_FINGERPRINT);
                 mSpass.initialize(MainActivity.this);
             } catch (Exception e) {
                 Toast.makeText(this, "Fingerprint scanner init failure: " + e.toString(), Toast.LENGTH_LONG).show();
             }
-            isFeatureEnabled = mSpass.isFeatureEnabled(Spass.DEVICE_FINGERPRINT);
+//            isFeatureEnabled = mSpass.isFeatureEnabled(Spass.DEVICE_FINGERPRINT);
 
             if (isFeatureEnabled) {
                 mSpassFingerprint = new SpassFingerprint(MainActivity.this);

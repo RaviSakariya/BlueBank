@@ -35,7 +35,7 @@ import bluebankapp.swe443.bluebankappandroid.myapplication.resource.User;
 
 public class BankSet extends SimpleSet<Bank>
 {
-	protected Class<?> getTypClass() {
+	public Class<?> getTypClass() {
 		return Bank.class;
 	}
 
@@ -73,7 +73,7 @@ public class BankSet extends SimpleSet<Bank>
    }
 
 
-   public BankSet filter(Condition<Bank> condition) {
+   public BankSet filter1(Condition<Bank> condition) {
       BankSet filterList = new BankSet();
       filterItems(filterList, condition);
       return filterList;

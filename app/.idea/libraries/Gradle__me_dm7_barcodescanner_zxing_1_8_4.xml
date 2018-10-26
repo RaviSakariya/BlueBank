@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: me.dm7.barcodescanner:zxing-1.8.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/d758ddb4d515f420f49a84d12680ad582a97f129/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d758ddb4d515f420f49a84d12680ad582a97f129/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

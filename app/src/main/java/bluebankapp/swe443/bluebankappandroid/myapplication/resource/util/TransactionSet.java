@@ -30,7 +30,7 @@ import de.uniks.networkparser.list.NumberList;
 
 public class TransactionSet extends SimpleSet<Transaction>
 {
-	protected Class<?> getTypClass() {
+	public Class<?> getTypClass() {
 		return Transaction.class;
 	}
 
@@ -68,7 +68,7 @@ public class TransactionSet extends SimpleSet<Transaction>
    }
 
 
-   public TransactionSet filter(Condition<Transaction> condition) {
+   public TransactionSet filter1(Condition<Transaction> condition) {
       TransactionSet filterList = new TransactionSet();
       filterItems(filterList, condition);
       return filterList;

@@ -6,7 +6,7 @@ class CreatorCreator{
 
    public static IdMap createIdMap(String sessionID)
    {
-      IdMap jsonIdMap = new IdMap().withSessionId(sessionID);
+      IdMap jsonIdMap = new IdMap().with(sessionID);
       jsonIdMap.with(new AccountCreator());
       jsonIdMap.with(new BankCreator());
       jsonIdMap.with(new TransactionCreator());

@@ -2,34 +2,21 @@ package bluebankapp.swe443.bluebankappandroid;
 
 import android.Manifest;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DialogTitle;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import com.google.zxing.BarcodeFormat;
+
 import com.google.zxing.Result;
-import com.google.zxing.WriterException;
-import com.google.zxing.common.BitMatrix;
-import com.google.zxing.MultiFormatWriter;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-import static android.graphics.Color.BLACK;
-import static android.graphics.Color.WHITE;
 
 public class TransferActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
 
